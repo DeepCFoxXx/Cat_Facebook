@@ -27,4 +27,13 @@ var app = function() {
   });
 };
 
+var addCat = function(name, favFood, imgUrl) {
+  var catContainer = createUl();
+  var nameElement = createLi("Name", name);
+  var favFoodElement = createLi("Favourite food", favFood);
+  var imgElement = createImg(imgUrl);
+  var cats = document.querySelector('#cats');
+  appendElements(cats, catContainer, nameElement, favFoodElement, imgElement);
+};
+
 window.onload = app;
