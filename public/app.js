@@ -20,3 +20,11 @@ var CAT_DATA = [
     img: "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg"
   }
 ];
+
+var app = function() {
+  CAT_DATA.forEach(function(cat) {
+    addCat(cat.name, cat.favFood, cat.img);
+  });
+};
+
+window.onload = app;
