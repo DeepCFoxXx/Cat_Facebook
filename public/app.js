@@ -48,4 +48,13 @@ var createLi = function(label, text) {
   return li;
 };
 
+var createImg = function(url) {
+  var img = document.createElement('img');
+  var li = document.createElement('li');
+  img.width = "500";
+  img.src = url;
+  li.appendChild(img);
+  return li;
+};
+
 window.onload = app;
