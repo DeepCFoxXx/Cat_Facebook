@@ -36,4 +36,10 @@ var addCat = function(name, favFood, imgUrl) {
   appendElements(cats, catContainer, nameElement, favFoodElement, imgElement);
 };
 
+var createUl = function() {
+  var ul = document.createElement('ul');
+  ul.classList.add('cat');
+  return ul;
+};
+
 window.onload = app;
