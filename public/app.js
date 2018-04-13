@@ -42,4 +42,10 @@ var createUl = function() {
   return ul;
 };
 
+var createLi = function(label, text) {
+  var li = document.createElement('li');
+  li.innerText = label + ": " + text;
+  return li;
+};
+
 window.onload = app;
