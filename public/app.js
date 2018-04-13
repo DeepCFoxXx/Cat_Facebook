@@ -57,4 +57,11 @@ var createImg = function(url) {
   return li;
 };
 
+var appendElements = function(cats, catContainer, name, favFood, img) {
+  catContainer.appendChild(name);
+  catContainer.appendChild(favFood);
+  catContainer.appendChild(img);
+  cats.appendChild(catContainer);
+};
+
 window.onload = app;
