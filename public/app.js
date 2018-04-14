@@ -51,7 +51,8 @@ var createLi = function(label, text) {
 var createImg = function(url) {
   var img = document.createElement('img');
   var li = document.createElement('li');
-  img.width = "500";
+  img.width = "100";
+  img.hieght = "100";
   img.src = url;
   li.appendChild(img);
   return li;
